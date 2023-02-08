@@ -1,0 +1,25 @@
+{
+  "name": "31-graphql-federation-code-first",
+  "version": "1.0.0",
+  "description": "A simple example of GraphQL Federation using Code First approach.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently -n front,back -c green,yellow,red -t \"HH:mm:ss\" -p \"{name} {time}\" \"npm --prefix ./movie-application run start:dev\" \"npm --prefix ./users-application run start:dev\"  \"npm --prefix ./gateway run start:dev\"",
+    "setup": "npm i && npm --prefix ./movie-application i && npm --prefix  ./users-application i && npm --prefix  ./gateway i ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JIdayyy/31-graphql-federation-code-first.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JIdayyy/31-graphql-federation-code-first/issues"
+  },
+  "homepage": "https://github.com/JIdayyy/31-graphql-federation-code-first#readme",
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
